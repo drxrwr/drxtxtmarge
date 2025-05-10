@@ -10,7 +10,8 @@ h1 {
     margin-bottom: 10px;
 }
 
-input[type="text"], input[type="file"] {
+input[type="text"],
+input[type="file"] {
     width: 80%;
     padding: 8px;
     margin: 10px 0;
@@ -31,15 +32,24 @@ ul {
 
 ul li {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px dashed #aaa;
     margin: 5px auto;
-    background: white;
+    background: #f9f9f9;
     border-radius: 5px;
-    cursor: grab;
+    cursor: move;
     width: 80%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: background 0.2s ease;
+}
+
+ul li:hover {
+    background-color: #e0ffe0;
+}
+
+.sortable-ghost {
+    opacity: 0.4;
 }
 
 button {
